@@ -1,0 +1,35 @@
+/* Textos do produto na tela inicial */
+
+.productBrand, .sellingPrice, .listPrice {
+    color: rgb(87, 252, 0);
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.productNameContainer {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+/* Tamanho do logo na página móvel */
+
+.sizeMobile {
+    padding-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+/* Tamanho da caixa de pesquisa */
+
+.autoCompleteOuterContainer {
+    margin-left: 1rem;
+}
+
+/* Tamanho do logo na página de desktop */
+
+.sizeDesktop {
+    margin-left: 1.5rem;
+}
+
+.logoLink {
+    margin: auto;
+}

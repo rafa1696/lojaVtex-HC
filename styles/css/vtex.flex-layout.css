@@ -1,0 +1,49 @@
+/* Cores de diversos elementos do desktop e móvel */
+
+.flexRowContent--main-header-mobile {
+    background-color: #212121;
+}
+
+.flexRowContent--headerDesktop {
+    background-color: #212121;
+    display: flex;
+}
+
+/* Configurações das páginas de produto */
+
+.flexCol--colunaEsquerda {
+    background-color: #666666;
+    padding: 2rem;
+}
+
+.flexCol--colunaDireita {
+    background-color: #666666;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .flexCol--colunaDireita {
+        padding-left: 28%;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    .flexCol--colunaDireita {
+        padding-left: 10rem;
+    }
+}
+
+.flexRowContent {
+    background-color: #303030;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.flexRowContent--headerDesktop {
+    background-color: #212121;
+}
+
+.flexColChild--colunaDireita {
+    width: 70%;
+}

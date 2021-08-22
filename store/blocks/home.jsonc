@@ -1,15 +1,165 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "rich-text"
+      "list-context.image-list#1",
+      "tab-layout#home",
+      "whatsapp-button"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "list-context.image-list#1": {
+    "children": [
+      "slider-layout#topo"
+    ],
+    "props": {
+      "images": [{
+          "image": "assets/BANNER-1.png",
+          "description": "Imagem carrossel 1"
+        },
+        {
+          "image": "assets/BANNER-2.png",
+          "description": "Imagem carrossel 2"
+        }
+      ]
+    }
+  },
+  "slider-layout#topo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"]
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2", "tab-list.item#home3"]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "promocoes",
+      "label": "Promoções",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "label": "Palmeiras",
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-list.item#home3": {
+    "props":{
+      "label": "Tudo",
+      "tabId": "tudo"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2",
+      "tab-content.item#home3"
+    ]
+  },
+  "tab-content.item#home1": {
+    "children": ["list-context.product-list#1"],
+    "props": {
+      "tabId": "promocoes"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": ["list-context.product-list#2"],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#home3": {
+    "children": ["list-context.product-list#3"],
+    "props": {
+      "tabId": "tudo"
+    }
+  },
+  "list-context.product-list#1": {
+    "blocks": ["product-summary.shelf#1"],
+    "props": {
+      "category": "Kit UpMedal/Promoção"
+    },
+    "children": ["slider-layout#produtos"]
+  },
+  "product-summary.shelf#1": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "slider-layout#produtos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#2": {
+    "blocks": ["product-summary.shelf#2"],
+    "props":{
+      "category": "Kit UpMedal/Palmeiras"
+    },
+    "children": [
+      "slider-layout#produtos2"
+    ]
+  },
+  "product-summary.shelf#2": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "slider-layout#produtos2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#3": {
+    "blocks": ["product-summary.shelf#3"],
+    "props":{
+      "category": "Kit UpMedal"
+    },
+    "children": [
+      "slider-layout#produtos3"
+    ]
+  },
+  "product-summary.shelf#3": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "slider-layout#produtos3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      }
     }
   }
 }

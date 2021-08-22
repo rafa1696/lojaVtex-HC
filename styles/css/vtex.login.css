@@ -1,0 +1,9 @@
+/* Cores e espaçamento do item de login */
+
+.formTitle, .forgotPasswordLink, .dontHaveAccount {
+    color: white;
+}
+
+.container {
+    margin-left: 0.3rem;
+}

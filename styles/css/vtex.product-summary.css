@@ -1,0 +1,29 @@
+/* Configurações de elementos do sumário dos produtos */
+
+.element {
+    background-color: rgb(66, 66, 66);
+    padding: 1rem;
+}
+
+.productBrand {
+    color: white;
+    font-size: large;
+}
+
+.listPrice, .listPriceLabel, .installmentContainer, .sellingPrice, .sellingPriceLabel {
+    color: rgb(87, 252, 0);
+}
+
+.imageContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    align-self: center;
+}
+
+

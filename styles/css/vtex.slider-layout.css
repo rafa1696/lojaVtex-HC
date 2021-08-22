@@ -1,0 +1,25 @@
+/* Definição do tamanho das imagens e espaçamento do carrossel */
+
+.imageElement {
+    max-height: 75% !important;
+    max-width: 60%;
+    margin-bottom: 3rem;
+    border-radius: 1.5rem;
+}
+
+/* Query para telefone */
+
+@media screen and (max-width: 768px) {
+    .imageElement {
+        max-width: 100%;
+        max-height: 100%!important;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Cor do container do slider e cor do fundo */
+
+.sliderLayoutContainer {
+    padding: 2rem;
+    background-color: #303030;
+}

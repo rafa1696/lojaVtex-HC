@@ -1,0 +1,5 @@
+/* Mudança de cor de texto dos elementos presentes na busca */
+
+.searchNotFound, .searchNotFoundOops, .totalProducts--layout, .totalProductsMessage, .searchNotFoundWhatDoIDo, .searchNotFoundWhatToDoDotsContainer {
+    color: white!important;
+}

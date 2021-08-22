@@ -86,7 +86,8 @@
   "list-context.product-list#1": {
     "blocks": ["product-summary.shelf#1"],
     "props": {
-      "category": "Kit UpMedal/Promoção"
+      "category": "UpMedal",
+      "orderBy": "OrderByBestDiscountDESC"
     },
     "children": ["slider-layout#produtos"]
   },
@@ -111,7 +112,7 @@
   "list-context.product-list#2": {
     "blocks": ["product-summary.shelf#2"],
     "props":{
-      "category": "Kit UpMedal/Palmeiras"
+      "category": "UpMedal/Desafios/Palmeiras"
     },
     "children": [
       "slider-layout#produtos2"
@@ -138,7 +139,7 @@
   "list-context.product-list#3": {
     "blocks": ["product-summary.shelf#3"],
     "props":{
-      "category": "Kit UpMedal"
+      "category": "UpMedal"
     },
     "children": [
       "slider-layout#produtos3"
